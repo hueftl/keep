@@ -1,5 +1,7 @@
 # Project Keep
 
+![](https://github.com/hueftl/keep/workflows/Node.js%20CI/badge.svg)
+
 Project Keep is a miniature painter and collectors dream!
 
 It will enable every miniature painter and hobbyist to keep track of everything. Your collections, your tools, your
