@@ -1,0 +1,28 @@
+{
+  "npmScope": "project-keep",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "keep": {
+      "tags": []
+    },
+    "keep-e2e": {
+      "tags": [],
+      "implicitDependencies": ["keep"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    }
+  }
+}
