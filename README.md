@@ -25,9 +25,10 @@ monorepo configuration is [Nx](https://nx.dev/angular)
 
 ### Backend
 
+- [ ] webserver with API
 - [ ] database
   - [ ] initial setup /structure
-  - [ ] communication through API
+- [ ] GraphQL service for API
 
 ## Support
 
