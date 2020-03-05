@@ -5,13 +5,12 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -19,13 +18,30 @@ jobs:
         node-version: [10.x, 12.x, 13.x]
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: borales/actions-yarn@v2.0.0
-      with:
-        node-version: ${{ matrix.node-version }}
-        cmd: install
-        cmd: build
-        cmd: test
-      env:
-        CI: true
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          node-version: ${{ matrix.node-version }}
+          cmd: install
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          node-version: ${{ matrix.node-version }}
+          cmd: build
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          node-version: ${{ matrix.node-version }}
+          cmd: lint
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          node-version: ${{ matrix.node-version }}
+          cmd: test
+
+        env:
+          CI: true
