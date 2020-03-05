@@ -11,12 +11,11 @@ on:
 
 jobs:
   build:
+    name: Test
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [10.x, 12.x, 13.x]
-
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
@@ -24,24 +23,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cmd: install
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          node-version: ${{ matrix.node-version }}
-          cmd: build
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          node-version: ${{ matrix.node-version }}
-          cmd: lint
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          node-version: ${{ matrix.node-version }}
-          cmd: test
 
         env:
           CI: true
