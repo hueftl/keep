@@ -15,6 +15,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "types": ["cypress", "@types/testing-library__cypress"],
     "paths": {
       "@project-keep/api-interfaces": ["libs/api-interfaces/src/index.ts"]
     }
