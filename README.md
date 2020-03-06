@@ -1,8 +1,8 @@
 # Project Keep
 
-![](https://github.com/hueftl/keep/workflows/Node.js%20CI/badge.svg)
+![Node](https://github.com/hueftl/keep/workflows/Node/badge.svg)
 
-Project Keep is a miniature painter and collectors dream!
+Project Keep is a miniature painters and collectors dream!
 
 It will enable every miniature painter and hobbyist to keep track of everything. Your collections, your tools, your
 colours. Also it will allow you to keep track of techniques used and stops time for everything.
@@ -14,7 +14,7 @@ This is a work in progress, so features will be added gradually as I progress al
 This project is intended as a monorepo with a [NestJS](https://nestjs.com/) backend API to be consumed by the
 [Angular](https://angular.io/) frontend. The chosen implementation language is
 [TypeScript](https://www.typescriptlang.org/) for convenience betweeen Angular and NestJS. The tool of choice for the
-monorepo configuration is [Nx](https://nx.dev/angular)
+monorepo configuration is [Nx](https://nx.dev/angular).
 
 ## Features / ToDo
 
