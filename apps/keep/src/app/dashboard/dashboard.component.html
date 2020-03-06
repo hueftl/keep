@@ -1,0 +1,50 @@
+<div>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav
+      #drawer
+      class="sidenav"
+      fixedInViewport="true"
+      [attr.role]="'navigation'"
+      [mode]="'side'"
+    >
+      <mat-toolbar color="primary">Menu</mat-toolbar>
+      <mat-nav-list>
+        <a mat-list-item>Home</a>
+        <a mat-list-item>Account</a>
+        <a mat-list-item>Sign Out</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <button
+            type="button"
+            aria-label="Toggle sidenav"
+            mat-icon-button
+            (click)="drawer.toggle()"
+          >
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
+          <span>Project Keep</span>
+          <span class="spacer"></span>
+          <mat-icon>favorite</mat-icon>
+          <mat-icon>delete</mat-icon>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <mat-toolbar color="accent">
+        <mat-toolbar-row>
+          <span>Status</span>
+          <span class="spacer"></span>
+          <mat-icon>home</mat-icon>
+          <mat-icon matBadge="22" matBadgePosition="above after"
+            >email</mat-icon
+          >
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <div class="body">
+        <h3>Sample content</h3>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
