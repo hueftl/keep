@@ -32,6 +32,20 @@ monorepo configuration is [Nx](https://nx.dev/angular).
   - [ ] initial setup /structure
 - [ ] GraphQL service for API
 
+## Usage
+
+### Local usage
+
+In order to use this monorepo locally, you first need to build the APi:
+`ng run api:build`
+Afterwards it can be run by leveraging the serve command:
+`ng run api:serve`
+
+With the API running, the frontend has the chance to fetch its data. Here also it needs to be built first:
+`ng run keep:build`
+and then you can run it with:
+`ng run keep:serve`
+
 ## Support
 
 If you like this repo and want to give something back, you can help me grab a coffee:
