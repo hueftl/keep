@@ -1,0 +1,34 @@
+<div class="ng-authentication-login">
+  <h2>LOGIN</h2>
+  <form
+    [formGroup]="authenticationForm"
+    (ngSubmit)="login.emit(authenticationForm.value)"
+  >
+    <div>
+      Username
+      <input
+        id="ng-authentication-login-user-input"
+        autocomplete="ng-authentication-login-user-input"
+        formControlName="username"
+        placeholder="Username"
+        type="text"
+      />
+    </div>
+    <div>
+      Password
+      <input
+        id="ng-authentication-login-password-input"
+        autocomplete="off"
+        formControlName="password"
+        placeholder="Password"
+        type="password"
+      />
+    </div>
+    <div *ngIf="error">Error: {{ error }}</div>
+    <div>
+      <button [disabled]="!authenticationForm.valid" type="submit">
+        LOGIN
+      </button>
+    </div>
+  </form>
+</div>
