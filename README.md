@@ -1,6 +1,6 @@
 # Project Keep
 
-![Node](https://github.com/hueftl/keep/workflows/Node%2013/badge.svg)
+![Node](https://github.com/hueftl/keep/workflows/Node%2013.x/badge.svg)
 
 Project Keep is a miniature painters and collectors dream!
 
