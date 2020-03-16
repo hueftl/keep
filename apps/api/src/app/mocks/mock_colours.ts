@@ -1,6 +1,6 @@
-import { Colour } from '@project-keep/api-interfaces';
+import { Color } from '@project-keep/api-interfaces';
 
-export const GW_COLOURS: Colour[] = [
+export const GW_COLORS: Color[] = [
   { type: 'Primer', name: 'Corax White' },
   { type: 'Primer', name: 'Chaos Black' },
   { type: 'Primer', name: 'Munitorum Varnish' },
@@ -14,3 +14,8 @@ export const GW_COLOURS: Colour[] = [
   { type: 'Primer', name: 'Wraith Bone' },
   { type: 'Primer', name: 'Grey Seer' }
 ];
+
+export const VALLEJO_COLORS: Color[] = [];
+export const SCALE75_COLORS: Color[] = [];
+export const PRIVATEER_PRESS_COLORS: Color[] = [];
+export const REAPER_COLORS: Color[] = [];
