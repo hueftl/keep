@@ -39,21 +39,31 @@ All basic scripts can be either run by [Yarn](https://yarnpkg.com/) (yarn 'comma
 ### Building
 
 In order to use this monorepo locally, you first need to build the APi:
+
 `ng run api:build`
+
 Afterwards it can be run by leveraging the serve command:
+
 `ng run api:serve`
 
 With the API running, the frontend has the chance to fetch its data. Here also it needs to be built first:
+
 `ng run keep:build`
-and then you can run it with:
+
+And then you can run it with:
+
 `ng run keep:serve`
 
 ### Testing
 
 In order to run all tests use the following command:
+
 `ng test`
+
 If only the API or frontend tests are wanted/needed, run this:
+
 `ng test api` for the API, and
+
 `ng test keep` for the frontend respectively.
 
 ## Support
