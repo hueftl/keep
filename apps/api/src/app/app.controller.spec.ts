@@ -8,7 +8,7 @@ import {
   VALLEJO_COLORS,
   SCALE75_COLORS,
   PRIVATEER_PRESS_COLORS,
-  REAPER_COLORS
+  ARMYPAINTER_COLORS
 } from './mocks/mock_colours';
 
 describe('AppController', () => {
@@ -17,7 +17,7 @@ describe('AppController', () => {
   const vallejoColors = VALLEJO_COLORS;
   const scaleColors = SCALE75_COLORS;
   const ppColors = PRIVATEER_PRESS_COLORS;
-  const reaperColors = REAPER_COLORS;
+  const apColors = ARMYPAINTER_COLORS;
 
   beforeAll(async () => {
     app = await Test.createTestingModule({
@@ -29,35 +29,35 @@ describe('AppController', () => {
   describe('getGwColours', () => {
     it('should return "Welcome to api!"', () => {
       const appController = app.get<AppController>(AppController);
-      expect(appController.getGwColours()).toEqual(gwColors);
+      expect(appController.getGwColors()).toEqual(gwColors);
     });
   });
 
   describe('getVallejoColours', () => {
     it('should return "Welcome to api!"', () => {
       const appController = app.get<AppController>(AppController);
-      expect(appController.getVallejoColours()).toEqual(vallejoColors);
+      expect(appController.getVallejoColors()).toEqual(vallejoColors);
     });
   });
 
   describe('getScaleColours', () => {
     it('should return "Welcome to api!"', () => {
       const appController = app.get<AppController>(AppController);
-      expect(appController.getScaleColours()).toEqual(scaleColors);
+      expect(appController.getScaleColors()).toEqual(scaleColors);
     });
   });
 
   describe('getPrivateerPressColours', () => {
     it('should return "Welcome to api!"', () => {
       const appController = app.get<AppController>(AppController);
-      expect(appController.getPrivateerPressColours()).toEqual(ppColors);
+      expect(appController.getPrivateerPressColors()).toEqual(ppColors);
     });
   });
 
-  describe('getReaperColours', () => {
+  describe('getArmypainterColours', () => {
     it('should return "Welcome to api!"', () => {
       const appController = app.get<AppController>(AppController);
-      expect(appController.getReaperColours()).toEqual(reaperColors);
+      expect(appController.getArmypainterColors()).toEqual(apColors);
     });
   });
 });

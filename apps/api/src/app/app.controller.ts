@@ -8,7 +8,7 @@ import {
   VALLEJO_COLORS,
   SCALE75_COLORS,
   PRIVATEER_PRESS_COLORS,
-  REAPER_COLORS
+  ARMYPAINTER_COLORS
 } from './mocks/mock_colours';
 
 @Controller()
@@ -17,32 +17,32 @@ export class AppController {
   vallejoColors = VALLEJO_COLORS;
   scaleColors = SCALE75_COLORS;
   ppColors = PRIVATEER_PRESS_COLORS;
-  reaperColors = REAPER_COLORS;
+  apColors = ARMYPAINTER_COLORS;
 
   constructor(private readonly appService: AppService) {}
 
   @Get('gw_colors')
-  getGwColours(): Color[] {
+  getGwColors(): Color[] {
     return this.gwColors;
   }
 
   @Get('vallejo_colors')
-  getVallejoColours(): Color[] {
+  getVallejoColors(): Color[] {
     return this.vallejoColors;
   }
 
   @Get('vallejo_colors')
-  getScaleColours(): Color[] {
+  getScaleColors(): Color[] {
     return this.scaleColors;
   }
 
   @Get('pp_colors')
-  getPrivateerPressColours(): Color[] {
+  getPrivateerPressColors(): Color[] {
     return this.ppColors;
   }
 
   @Get('reaper_colors')
-  getReaperColours(): Color[] {
-    return this.reaperColors;
+  getArmypainterColors(): Color[] {
+    return this.apColors;
   }
 }

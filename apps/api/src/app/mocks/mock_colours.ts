@@ -18,4 +18,4 @@ export const GW_COLORS: Color[] = [
 export const VALLEJO_COLORS: Color[] = [];
 export const SCALE75_COLORS: Color[] = [];
 export const PRIVATEER_PRESS_COLORS: Color[] = [];
-export const REAPER_COLORS: Color[] = [];
+export const ARMYPAINTER_COLORS: Color[] = [];

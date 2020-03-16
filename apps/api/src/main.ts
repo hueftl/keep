@@ -3,8 +3,10 @@
  * This is only a minimal backend to get started.
  */
 
+// NestJS
 import { NestFactory } from '@nestjs/core';
 
+// Modules
 import { AppModule } from './app/app.module';
 
 async function bootstrap() {
