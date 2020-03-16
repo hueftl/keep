@@ -1,7 +1,4 @@
-export interface Colour {
-  type: string;
-  name: string;
-}
+import { Colour } from '@project-keep/api-interfaces';
 
 export const GW_COLOURS: Colour[] = [
   { type: 'Primer', name: 'Corax White' },

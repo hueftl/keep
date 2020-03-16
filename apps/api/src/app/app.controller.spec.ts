@@ -3,7 +3,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
-import { Colour, GW_COLOURS } from './mocks/mock_colours';
+import { GW_COLOURS } from './mocks/mock_colours';
 
 describe('AppController', () => {
   let app: TestingModule;

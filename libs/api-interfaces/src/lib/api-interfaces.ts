@@ -1,3 +1,4 @@
-export interface Message {
-  message: string;
+export interface Colour {
+  type: string;
+  name: string;
 }
