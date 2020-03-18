@@ -70,14 +70,6 @@ If only the API or frontend tests are wanted/needed, run this:
 
 This repository is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
 
-All paint names are copyrighted by their respective owners:
-
-- Games Workshop: All Citadel paint names are copyright by Games Workshop Ltd.
-- Vallejo: All Vallejo paint names are copyright by Vallejo S.L.
-- Privateer Press: All Formula P3 (Privateer Press) paint names are copyright by Privateer Press Inc.
-- Army Painter: All Warpaints paint names are copyright by The Army Painter ApS.
-- Scale75: all ScaleColor paint names are copyright by Scale 75.
-
 ## Support
 
 If you like this repo and want to give something back, you can help me grab a coffee:
