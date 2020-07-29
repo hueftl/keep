@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest]
     strategy:
       matrix:
         node-version: [13.x]
@@ -18,14 +18,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn install
-      - run: yarn ng api:build
-      - run: yarn ng keep:build
+      - runs: yarn ng
         env:
           CI: true
-
   test:
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest]
     strategy:
       matrix:
         node-version: [13.x]
@@ -35,7 +32,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn ng test api
-      - run: yarn ng test keep
+      - runs: yarn ng
         env:
           CI: true
