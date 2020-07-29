@@ -9,23 +9,33 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [13.x]
-
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-        - run: yarn install
-        - name: test
-          - run: yarn ng test api
-          - run: yarn ng test keep
-        - name: build
-          - run: yarn ng api:build
-          - run: yarn ng keep:build
+      - run: yarn install
+      - run: yarn ng api:build
+      - run: yarn ng keep:build
+        env:
+          CI: true
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [13.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn ng test api
+      - run: yarn ng test keep
         env:
           CI: true
